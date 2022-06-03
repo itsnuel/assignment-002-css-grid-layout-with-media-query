@@ -1,0 +1,106 @@
+.container{
+    display:grid;
+    height: 50vh;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'SLH PAA CSS'
+        'BLT politics politics'
+        'BLT technology technology '
+        'BLT locals locals '
+        'BLT opinion opinion'
+        'BLT sports sports'
+    ;
+    text-align: left;
+    
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#SLH{
+    grid-area:SLH;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#PAA{
+    grid-area:PAA;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#PAA img{
+    width: 250px;
+    height: 130px;
+}
+#CSS{
+    grid-area:CSS;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#BLT{
+    grid-area:BLT;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+#politics{
+    background-color:coral;
+    grid-area: politics;
+    height: 42px;
+    border-right: 2px solid;
+}
+#technology{
+    background-color: aquamarine;
+    grid-area: technology;
+    height: 42px;
+    border-right: 2px solid;
+}
+#locals{
+    background-color: aqua;
+    grid-area: locals;
+    height: 42px;
+    border-right: 2px solid;
+}
+#opinion{
+    background-color: rgb(58, 35, 185);
+    grid-area: opinion;
+    height: 42px;
+    border-right: 2px solid;
+}
+#sports{
+    background-color: purple;
+    grid-area: sports;
+    height: 42px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+}
+
+@media(max-width:576px){
+    .container{
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+            'SLH' 
+            'PAA' 
+            'CSS'
+            'BLT'
+            'politics'
+            'technology'
+            'locals'
+            'opinion'
+            'sports'
+        ;
+    }
+    #politics{
+        background-color: blue;
+    }
+    #sports{
+        background-color: brown;
+    }
+}
